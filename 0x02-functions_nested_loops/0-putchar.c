@@ -6,8 +6,6 @@
  * Prints string _putchar followed by new line;
  * Return: 1 on success, -1 on error.
  */
-
-
 int main(void)
 {
 	_putchar('_');
@@ -21,5 +19,4 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
-
 }
