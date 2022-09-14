@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * main - print putchar
- * Return: always 0
+ * main - program starts here
+ * Function _putchar declared in the main.h file
+ * Prints string _putchar followed by new line;
+ * Return: 1 on success, -1 on error.
  */
+
 
 int main(void)
 {
