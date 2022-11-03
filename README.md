@@ -1,2 +1,1 @@
-# alx-low_level_programming
-(C) low level programming
+this directory contains a file i/o project 
