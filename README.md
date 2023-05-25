@@ -1,1 +1,1 @@
-this directory contains a file i/o project 
+This directory contains C programming projects.
