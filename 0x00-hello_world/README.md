@@ -25,5 +25,5 @@ The beggining of the c language.
 | 2-assembler | Writing a file that generates assembly code| Assembly language and conversion to object code. |
 | 3-name | compiles a C file and creates an executable named cisfun | Specifing name for compiled executable c file. |
 | 4-puts.c |Write a C program that prints exactly "Programming is like building a multilingual puzzle| Using puts to write to stdout |
-| 5-printf.c | Write a C program that prints exactly with proper grammar, but the outcome is a piece of art, | Use of printf to print to stdout. |
+| 5-printf.c | Write a C program that prints exactly with proper grammar, but the outcome is a piece of art, | Use of printf to print to stdout and exit codes. |
 | 6-size.c | Write a C program that prints the size of various types on the computer | Printing size of data types in different architectures. |
