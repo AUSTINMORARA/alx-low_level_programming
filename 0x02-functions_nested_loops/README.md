@@ -10,6 +10,6 @@
 - What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
 - What are header files and how to to use them with #include
 
-| File | Descriptions | File |
+| File | Descriptions | Lesson |
 |------|-------------|-------|
-| 0-putchar.c | Write a program that prints _putchar, followed by a new line. | Writing a program that prints |
+| 0-putchar.c | Write a program that prints _putchar, followed by a new line. | How to write a program that prints |
