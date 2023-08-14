@@ -1,6 +1,7 @@
 #include<stdio.h>
 /**
- * main: Prints the name of the file.
+ * main: entry point.
+ * Description: Prints the name of the file.
  * Return: 0 on Sucess.
  */
 int main(void)
