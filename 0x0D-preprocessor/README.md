@@ -18,4 +18,6 @@ Preprocesing is a stage where our source file is passed through a preprocessor t
 | 0-object_like_macro.h | Create a header file that defines a macro named <code>SIZE<code>| Defining macros and Using guards to evade double inclusion |
 | 1-pi.h | Create a header file that defines a macro named PI | Representation PI using macros |
 | 2-main.c | Write a program that prints the name of the file | Using predefined macros |
+| 3-function_like_macro.h | Write a function-like macro ABS(x) that computes the absolute value of a number | Making numbers absolute and Using macroargumaents like funtions |
+| 4-sum.h | Write a function-like macro SUM(x, y) that computes the sum of the numbers  | Using macro arguments as functions. |
 
