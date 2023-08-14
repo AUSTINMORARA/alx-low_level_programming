@@ -14,5 +14,8 @@ Preprocesing is a stage where our source file is passed through a preprocessor t
 ## Tasks
 
 | File | Description | Lesson |
-|  |  |  |
-|  |  |  |
+|------|-------------|--------|
+| 0-object_like_macro.h | Create a header file that defines a macro named <code>SIZE<code>| Defining macros and Using guards to evade double inclusion |
+| 1-pi.h | Create a header file that defines a macro named PI | Representation PI using macros |
+| 2-main.c | Write a program that prints the name of the file | Using predefined macros |
+
