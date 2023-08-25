@@ -11,15 +11,17 @@
 void prints_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	int i;
+	unsigned int i;
 	char **strs;
 
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
-		printf("%s",va_arg(ap, char[i]));
-		if (*separator != '\0')
-			printf(',');
+		printf("%s",va_arg(ap, char*));
+		if (strs == NULL)
+			printf("(nil)");
+		if (separator != NULL)
+			printf("%s",separator);
 	}
 	va_end(ap);
 }
