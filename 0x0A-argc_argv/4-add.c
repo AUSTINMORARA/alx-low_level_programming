@@ -9,13 +9,23 @@
 int main(int argc, char *argv[])
 {
 	int i = 1;
+	int sum = 0;
+	int n = atoi(argv[i]);
 
 	if (argc == 1)
-		printf("%s\n", argv[0]);
+		printf("%d\n", 0);
+
 	while (i < argc)
 	{
-		printf("%s\n", argv[i]);
+		if (!isdigit(n))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += n;
 		i++;
 	}
+	printf("%d\n", sum);
+
 	return (0);
 }
