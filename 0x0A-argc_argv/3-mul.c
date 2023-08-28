@@ -8,13 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = atoi(argv[1]) * atoi(argv[2]);
+	int res = atoi(argv[1]) * atoi(argv[2]);
 
-	if (argc < 2)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error");
 		return (1);
 	}
-	printf("%d\n", i);
+	printf("%d\n", res);
 	return (0);
 }
