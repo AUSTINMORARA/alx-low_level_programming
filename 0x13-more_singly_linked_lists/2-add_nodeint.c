@@ -7,11 +7,12 @@
  *
  * @head: the node added.
  * @n: data in the node.
+ * Return: address of the new element.
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t * temp;
+	listint_t *temp;
 
 	if (head == NULL)
 		return (0);
