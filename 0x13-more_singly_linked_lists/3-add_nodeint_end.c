@@ -4,6 +4,7 @@
  * add_node - adds node at the end of the list.
  * @head: the beginning of the list.
  * @n: the lists data.
+ * Returns address of the new element.
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -27,11 +28,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		last = *head;
 
-		while(ptr->next != NULL)
+		while (ptr->next != NULL)
 		{
 			ptr = ptr->next;
 		}
 		ptr->next = last;
 	}
-	return(last);
+	return (last);
 }
