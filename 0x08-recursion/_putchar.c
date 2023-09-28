@@ -2,6 +2,7 @@
 /**
  * _putchar - prints a character.
  * @c: character to be printed.
+ * Return: a character.
  */
 int _putchar(char c)
 {
