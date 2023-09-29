@@ -8,3 +8,4 @@
 | FILE | DESCRIPTION | LESSON |
 |------|-------------|--------|
 | 0-whatsmyname.c | A program that prints its name | how to evade unused variables: (void)variable |
+| 1-args.c | prints the number of arguments passed to it | use of argument counter |
