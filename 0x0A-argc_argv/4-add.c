@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int count, sum;
+	sum = 0;
 
 	if (argc == 1)
 	{
@@ -19,7 +20,6 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		sum = 0;
 		for (count = 1; count < argc; count++)
 		{
 			if (*argv[count] < '0' || *argv[count] > '9')
