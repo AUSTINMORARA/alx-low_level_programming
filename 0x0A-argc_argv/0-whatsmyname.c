@@ -4,7 +4,7 @@
  * main - writes the program name.
  * @argc: argument counter(number of arguments).
  * @argv: an array of command line arguments.
- * Return: name of the program.
+ * Return: 0 on Success.
  */
 
 int main(int argc, char *argv[])

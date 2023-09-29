@@ -9,3 +9,4 @@
 |------|-------------|--------|
 | 0-whatsmyname.c | A program that prints its name | how to evade unused variables: (void)variable |
 | 1-args.c | prints the number of arguments passed to it | use of argument counter |
+| 2-argc.c | prints all arguments it recieves | Use of both argc and argv |
