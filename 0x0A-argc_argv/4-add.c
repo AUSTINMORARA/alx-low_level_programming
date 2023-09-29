@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i, sum, a;
 
-	if(argc == 1)
+	if (argc == 1)
 		printf("0/n");
 	for (i = 1; i < argc; i++)
 	{
