@@ -3,6 +3,7 @@
 
 /**
  * dog - Structure representing a dog.
+ * dog_t - alias for dog struct.
  * @name: name of the dog.
  * @age: age of the dog.
  * @owner: dog's owner.
@@ -14,9 +15,6 @@ typedef struct dog
 	char *name;
 	float age;
 	char *owner;
-	/**
-	 * dog_t - alias for dog struct.
-	 */
 } dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
