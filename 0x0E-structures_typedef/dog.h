@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * dog - Structure representing a dog.
+ * struct dog - Structure representing a dog.
  * dog_t - alias for dog struct.
  * @name: name of the dog.
  * @age: age of the dog.
