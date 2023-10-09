@@ -1,0 +1,6 @@
+#ifndef OBEJECT_LIKE_MACRO_H
+#define OBEJECT_LIKE_MACRO_H
+
+#define PI 3.14159265359
+
+#endif
