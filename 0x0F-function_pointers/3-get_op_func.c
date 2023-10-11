@@ -1,8 +1,10 @@
 #include "3-calc.h"
+#include <stddef.h>
 
 /**
  * get_op_func - function selector.
  * @s: operator passed as argument to program.
+ * Return: Function it points to.
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -17,10 +19,15 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	if (s == '+')return ops[0];
-	else if (s == '-')return ops[1];
-	else if (s == '*')return ops[2];
-	else if (s == '/')return ops[3];
-	else if (s == '%')return ops[4];
-	else return ops[5];
+	i = 0;
+
+	while (i < 5)
+	{
+		if(s == ops[i].op)
+		{
+			return (ops[i].f);
+		}
+		i++;
+	}
+	return (NULL);
 }
