@@ -4,6 +4,7 @@
  * print_strings - prints strings
  * @separator: string printed between strings.
  * @n: number of strings passed.
+ * Return: nothing.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -26,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (separator == NULL)
 			;
 
-		if (i < n - 1)
+		if (i != n - 1)
 		{
 			printf("%s", separator);
 		}
