@@ -19,21 +19,4 @@ typedef struct
 	void (*print)(va_list);
 }act;
 
-void print_char(va_list ap)
-{
-	printf("%c", va_arg(ap, int));
-}
-void print_int(va_list ap)
-{
-	printf("%d", va_arg(ap, int));
-}
-void print_float(va_list ap)
-{
-	printf("%f", va_arg(ap, double));
-}
-void print_str(va_list ap)
-{
-	printf("%s", va_arg(ap, char*));
-}
-
 #endif
