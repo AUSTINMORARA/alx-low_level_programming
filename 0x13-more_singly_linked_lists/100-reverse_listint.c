@@ -4,27 +4,32 @@
  * reverse_listint - Reverses a listint_t list.
  * @head: A pointer to the address of
  *        the head of the list_t list.
- *
+ * @num: new node int
  * Return: A pointer to the first node of the reversed list.
  */
-listint_t *reverse_listint(listint_t **head)
+listint_t *reverse_listint(listint_t **head, const int num)
 {
 	listint_t *ahead, *behind;
 
-	if (head == NULL || *head == NULL)
+	ahead = malloc(sizeof(listint_t));
+	
+	if (ahead == NULL)
 		return (NULL);
 
-	behind = NULL;
+	ahead->n = num;
+	ahead->next = NULL;
 
-	while ((*head)->next != NULL)
-	{
-		ahead = (*head)->next;
-		(*head)->next = behind;
-		behind = *head;
+	if (*head == NULL)
 		*head = ahead;
-	}
 
-	(*head)->next = behind;
+	else
+	{
+		behind = *head;
+		
+		while (behind->next != NULL)
+			behind = behind->next;
+		behind->next = ahead;
+	}
 
 	return (*head);
 }
