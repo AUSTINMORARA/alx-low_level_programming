@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < by; i++)
 	{
-		printf("%.2x", opcode[i]);
+		printf("%.2x", opcode[i] && 0xFF );
 
 		if (i != by - 1)
 			printf(" ");
