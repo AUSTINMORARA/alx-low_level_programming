@@ -6,5 +6,6 @@ int _putchar(char c);
 int square(int n1, int n2);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
+int is_palindrome(char *s);
 
 #endif/*MAIN_H*/
