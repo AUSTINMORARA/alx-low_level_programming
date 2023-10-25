@@ -1,54 +1,49 @@
 #include "lists.h"
 #include <stdio.h>
 
-size_t looped_listint_len(const listint_t *head);
-size_t print_listint_safe(const listint_t *head);
-
 /**
- * looped_listint_len - Counts the number of unique nodes
- *                      in a looped listint_t linked list.
+ * through_listint_len - Counts the number of unique nodes
  * @head: A pointer to the head of the listint_t to check.
- *
- * Return: If the list is not looped - 0.
- *         Otherwise - the number of unique nodes in the list.
+ * Return: If the list is not gone through - 0
+ *         Else - return number of unique nodes.
  */
-size_t looped_listint_len(const listint_t *head)
+
+size_t through_listint_len(const listint_t *head)
 {
-	const listint_t *tortoise, *hare;
-	size_t nodes = 1;
+	const listint_t *i, *j;
+	size_t node = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	tortoise = head->next;
-	hare = (head->next)->next;
+	i = head->next;
+	j = (head->next)->next;
 
-	while (hare)
+	while (j)
 	{
-		if (tortoise == hare)
+		if (i == j)
 		{
-			tortoise = head;
-			while (tortoise != hare)
+			i = j;
+			while (i != j)
 			{
-				nodes++;
-				tortoise = tortoise->next;
-				hare = hare->next;
+				node++;
+				i = i->next;
+				j = j->next;
 			}
 
-			tortoise = tortoise->next;
-			while (tortoise != hare)
+			i = i->next;
+			while (i != j)
 			{
-				nodes++;
-				tortoise = tortoise->next;
+				node++;
+				i = i->next;
 			}
 
-			return (nodes);
+			return (node);
 		}
 
-		tortoise = tortoise->next;
-		hare = (hare->next)->next;
+		i = i->next;
+		j = (j->next)->next;
 	}
-
 	return (0);
 }
 
@@ -58,11 +53,12 @@ size_t looped_listint_len(const listint_t *head)
  *
  * Return: The number of nodes in the list.
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes, index = 0;
 
-	nodes = looped_listint_len(head);
+	nodes = through_listint_len(head);
 
 	if (nodes == 0)
 	{
@@ -86,4 +82,3 @@ size_t print_listint_safe(const listint_t *head)
 
 	return (nodes);
 }
-
