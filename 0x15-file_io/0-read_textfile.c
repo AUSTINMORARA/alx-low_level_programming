@@ -2,8 +2,8 @@
 
 /**
  * read_textfile - reads a textfile and prints it to the POSIX.
- * @filename - name of file being read.
- * @letters - number of letters read and printed.
+ * @filename: name of file being read.
+ * @letters: number of letters read and printed.
  *
  * Return: Number of letter read and printed on success else 0.
  */
