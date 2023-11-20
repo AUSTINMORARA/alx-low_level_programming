@@ -40,7 +40,7 @@ The beggining of the c language.
 	2. Compilation (gcc -S)
 	3. Assembly (gcc -c)
 	4. Linking(Funtion calls and libraries)
-
+**NOTE:**Look into make files
 - The hashbang #! directive. Kernel interpretes as executable and tries to run.
 - Relationship between function declaration return type and the return value of a function.
 - Modifiers(Increase size for the data type) and Data types.
@@ -54,3 +54,8 @@ The beggining of the c language.
 [Hash bang](https://twitter.com/unix_byte/status/1024147947393495040)
 [Compilation Process](https://youtu.be/VDslRumKvRA?si=Jjrcdaz0ybxVEgDI)
 [Betty Linter](https://github.com/alx-tools/Betty/wiki)
+
+### To look into:
+- [x] Type conversion
+- [ ] Make files
+- [ ] Creation of linters
