@@ -32,7 +32,7 @@ The beggining of the c language.
 - Basics of C and its beggining. 
 - Standards of C: 
 	1. "K & R"C (First), 
-	2. ANSI C(C89/C90)[Most portable and most used, gcc's default]-ansi/ flag:-std=c89, 
+	2. ANSI C(C89/C90)[Most portable and most used, gcc's default]flags:-ansi/-std=c89, 
 	3. C90 [Most recent flag:-std=c99]
 
 - Compilation Process and its flags.
