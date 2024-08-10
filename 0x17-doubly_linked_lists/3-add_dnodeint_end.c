@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "lists.h"
 /**
  * add_node_end - adds node at the end.
